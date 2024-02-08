@@ -5,19 +5,19 @@ import { RouterProvider, createHashRouter } from 'react-router-dom'
 import Home from './Home.jsx'
 import TareaFiltros from './TareaFiltros.jsx'
 
-const router = createHashRouter ([
+const router = createHashRouter([
   {
     path: '/',
-    element: <Home/>,
+    element: <Home />,
   },
   {
     path: '/TareaFiltros',
-    element: <TareaFiltros/>,
+    element: <TareaFiltros />,
   },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
