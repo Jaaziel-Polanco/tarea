@@ -11,7 +11,7 @@ function Home() {
   };
 
   return (
-    <div className='bg-slate-600 text-center pt-10 md:pt-16 h-fit'>
+    <div className='bg-slate-600 text-center pt-10 md:pt-16 h-fit animate-fade-right animate-duration-[1800ms] animate-ease-out animate-fill-both'>
       <h1 className='text-3xl md:text-6xl font-mono mb-10 md:mb-32'>Tarea Figuras</h1>
       <div className="flex flex-wrap justify-center gap-4 md:gap-10 mb-10 md:mb-20">
         <div className={`w-24 h-24 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-red-400 to-blue-400 m-2 md:m-4 border-black border-4 ${animar} `}></div>
@@ -26,6 +26,8 @@ function Home() {
         <button onClick={() => applyAnimation('')} className="bg-gray-500 p-2 md:p-3 rounded-full font-mono hover:p-4 transition-all">Parar animaciones</button>
       </div>
       <Link to={'/TareaFiltros'} className='bg-cyan-600 px-6 py-2 md:p-3 rounded-full font-mono hover:px-8 hover:py-3 md:hover:p-5 transition-all animate-pulse animate-infinite animate-duration-1000 animate-ease-in'>Siguiente tarea</Link>
+      <Link to={'/Juego'} className='bg-cyan-600 px-6 py-2 md:p-3 rounded-full font-mono hover:px-8 hover:py-3 md:hover:p-5 transition-all animate-pulse animate-infinite animate-duration-1000 animate-ease-in'>Ir al Juego</Link>
+      <Link to={'/KaraokePlayer'} className='bg-cyan-600 px-6 py-2 md:p-3 rounded-full font-mono hover:px-8 hover:py-3 md:hover:p-5 transition-all animate-pulse animate-infinite animate-duration-1000 animate-ease-in'>Ir al Karaoke</Link>
       <Footer />
     </div>
   )
